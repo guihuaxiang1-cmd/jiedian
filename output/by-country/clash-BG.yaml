@@ -6,17 +6,18 @@ log-level: info
 proxies:
 - name: 🇧🇬 BG 01 - xiaohe
   type: vless
-  server: 104.21.70.21
-  port: 8080
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 108.165.233.223
+  port: 443
+  uuid: 2388e166-3890-33ae-f77e-efac00000003
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: netlivpn4813.ddhshhshs.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
     headers:
-      Host: vms.lifetime36.workers.dev
+      Host: netlivpn4813.ddhshhshs.workers.dev
 - name: 🇧🇬 BG 02 - xiaohe
   type: vless
   server: 192.145.31.5
