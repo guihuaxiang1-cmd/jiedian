@@ -18,23 +18,95 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: ''
+      Host: www.pubgmobile.com
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
   type: vmess
-  server: 47.83.19.148
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+  type: vmess
+  server: 93ucrn4i0pffuabk.v.3dns.vip
   port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
+  servername: ''
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
+  type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
+  type: vless
+  server: 185.193.29.123
+  port: 443
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: notls.lukongtou.eu.org
+  network: ws
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: notls.lukongtou.eu.org
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
+  type: vless
+  server: skk.moe
+  port: 8880
+  uuid: 25322a43-4ef3-45cc-9e96-db44bcccd7be
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: purple-disk-f68d.14-360.workers.dev
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
+  type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,6 +114,11 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -49,5 +126,10 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
 rules:
 - MATCH,PROXIES
