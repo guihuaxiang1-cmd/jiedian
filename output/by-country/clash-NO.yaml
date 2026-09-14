@@ -25,7 +25,7 @@ proxies:
   client-fingerprint: qq
 - name: 🇳🇴 NO 03 - xiaohe
   type: vless
-  server: aldebaran.yokkastars.com
+  server: 89.185.81.65
   port: 40443
   uuid: ed91e79c-f6bf-4fba-8cc0-6d45acaec22b
   udp: true
