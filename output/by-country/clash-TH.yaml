@@ -5,33 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - xiaohe
-  type: vless
-  server: 104.18.189.234
-  port: 8880
-  uuid: 52fb52b1-82de-4c6f-b7d3-599ce5d57f1c
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: damp-disk-1ae9.138-c4c.workers.dev
-- name: 🇹🇭 TH 02 - xiaohe
-  type: vless
-  server: 8.222.70.238
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /mall/china/doc?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇹🇭 TH 03 - xiaohe
   type: vmess
   server: 118.193.57.167
   port: 49667
@@ -52,15 +25,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇭 TH 01 - xiaohe
-  - 🇹🇭 TH 02 - xiaohe
-  - 🇹🇭 TH 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇭 TH 01 - xiaohe
-  - 🇹🇭 TH 02 - xiaohe
-  - 🇹🇭 TH 03 - xiaohe
 rules:
 - MATCH,PROXIES
