@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇬 BG 01 - xiaohe
+- name: 🇦🇲 AM 01 - xiaohe
   type: vless
   server: 2.56.204.183
   port: 443
@@ -18,7 +18,7 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇧🇬 BG 02 - xiaohe
+- name: 🇦🇲 AM 02 - xiaohe
   type: vless
   server: 2.56.204.183
   port: 443
@@ -37,14 +37,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇧🇬 BG 01 - xiaohe
-  - 🇧🇬 BG 02 - xiaohe
+  - 🇦🇲 AM 01 - xiaohe
+  - 🇦🇲 AM 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇬 BG 01 - xiaohe
-  - 🇧🇬 BG 02 - xiaohe
+  - 🇦🇲 AM 01 - xiaohe
+  - 🇦🇲 AM 02 - xiaohe
 rules:
 - MATCH,PROXIES
