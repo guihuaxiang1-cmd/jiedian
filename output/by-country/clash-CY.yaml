@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇨🇾 CY 02 - xiaohe
   type: vless
   server: 194.76.154.31
@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
 - name: 🇨🇾 CY 03 - xiaohe
   type: vless
   server: 194.76.154.31
@@ -39,21 +39,7 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: random
-- name: 🇨🇾 CY 04 - xiaohe
-  type: vless
-  server: 132.243.238.192
-  port: 8443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /+
-    headers:
-      Host: shephe.dpdns.org
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,7 +48,6 @@ proxy-groups:
   - 🇨🇾 CY 01 - xiaohe
   - 🇨🇾 CY 02 - xiaohe
   - 🇨🇾 CY 03 - xiaohe
-  - 🇨🇾 CY 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -71,6 +56,5 @@ proxy-groups:
   - 🇨🇾 CY 01 - xiaohe
   - 🇨🇾 CY 02 - xiaohe
   - 🇨🇾 CY 03 - xiaohe
-  - 🇨🇾 CY 04 - xiaohe
 rules:
 - MATCH,PROXIES
