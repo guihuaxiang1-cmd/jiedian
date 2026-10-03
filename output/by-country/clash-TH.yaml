@@ -4,45 +4,45 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇰 LK 01 - xiaohe
+- name: 🇹🇭 TH 01 - xiaohe
   type: vless
-  server: cdn.zoom.us
+  server: 103.86.49.57
   port: 80
-  uuid: 1eaed465-d720-400b-9f9f-439600a2d093
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /ws
     headers:
-      Host: cloud.ghostdev.lk
-- name: 🇱🇰 LK 02 - xiaohe
+      Host: aIs.SpEeDtEsT.nEt
+- name: 🇹🇭 TH 02 - xiaohe
   type: vless
-  server: cloud.ghostdev.lk
+  server: 103.86.49.57
   port: 80
-  uuid: 1eaed465-d720-400b-9f9f-439600a2d093
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /ws
     headers:
-      Host: cloud.ghostdev.lk
+      Host: aIs.SpEeDtEsT.nEt
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇰 LK 01 - xiaohe
-  - 🇱🇰 LK 02 - xiaohe
+  - 🇹🇭 TH 01 - xiaohe
+  - 🇹🇭 TH 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇰 LK 01 - xiaohe
-  - 🇱🇰 LK 02 - xiaohe
+  - 🇹🇭 TH 01 - xiaohe
+  - 🇹🇭 TH 02 - xiaohe
 rules:
 - MATCH,PROXIES
