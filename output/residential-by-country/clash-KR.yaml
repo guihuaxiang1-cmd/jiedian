@@ -5,12 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  type: ss
-  server: ce1fc2d8.krkt.hkssip.com
-  port: 49642
-  cipher: aes-256-gcm
-  password: ac9c0a7b
+  type: vless
+  server: 104.16.107.139
+  port: 8880
+  uuid: ff7390de-ce93-4d7d-b08b-bef8f71a85cf
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: tiny-lake-c7f3.16-1af.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
