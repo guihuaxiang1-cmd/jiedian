@@ -13,41 +13,12 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇷🇴 RO 02 - xiaohe
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 03 - xiaohe
-  type: vless
-  server: 45.130.125.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime58.workers.dev
-- name: 🇷🇴 RO 04 - xiaohe
   type: ss
-  server: bogging-eyeteeth-fly.freesocks.work
-  port: 443
+  server: 194.68.44.42
+  port: 64546
   cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+  password: U83u9OGpvSatIUW7LsWffr
   udp: true
-- name: 🇷🇴 RO 05 - xiaohe
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,9 +26,6 @@ proxy-groups:
   - AUTO
   - 🇷🇴 RO 01 - xiaohe
   - 🇷🇴 RO 02 - xiaohe
-  - 🇷🇴 RO 03 - xiaohe
-  - 🇷🇴 RO 04 - xiaohe
-  - 🇷🇴 RO 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -65,8 +33,5 @@ proxy-groups:
   proxies:
   - 🇷🇴 RO 01 - xiaohe
   - 🇷🇴 RO 02 - xiaohe
-  - 🇷🇴 RO 03 - xiaohe
-  - 🇷🇴 RO 04 - xiaohe
-  - 🇷🇴 RO 05 - xiaohe
 rules:
 - MATCH,PROXIES
