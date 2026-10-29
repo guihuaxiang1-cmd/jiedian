@@ -11,33 +11,17 @@ proxies:
   cipher: aes-256-gcm
   password: gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
   udp: true
-- name: 🇸🇨 SC 02 - xiaohe
-  type: vless
-  server: 155.212.240.10
-  port: 443
-  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: n.bitpulse.me
-  network: ws
-  ws-opts:
-    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560
-    headers:
-      Host: n.bitpulse.me
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇨 SC 01 - xiaohe
-  - 🇸🇨 SC 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 SC 01 - xiaohe
-  - 🇸🇨 SC 02 - xiaohe
 rules:
 - MATCH,PROXIES
